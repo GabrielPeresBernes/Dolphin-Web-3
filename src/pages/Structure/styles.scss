@@ -1,0 +1,53 @@
+@import "../../variables";
+
+.working-section .service{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100%;
+}
+
+.working-section .service .description{
+  font-size: 22px;
+  padding: 20px 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.working-section .service img{
+  max-width: 300px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  z-index: 2;
+}
+
+.working-section .service-box{
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.working-section .service-box p.icon{
+  color: #3c763d;
+  font-size: 60px;
+  margin: 0;
+  z-index: 2;
+  background-color: $grey;
+}
+
+.working-section .service-box hr{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  border-color: #3c763d;
+}
+
+.working-section .working-title{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.working-section .gallery-button{
+  margin-top: 20px;
+  animation: headShake 3s infinite;
+}

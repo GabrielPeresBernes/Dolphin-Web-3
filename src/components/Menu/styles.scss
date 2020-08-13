@@ -1,0 +1,82 @@
+@import "../../_variables";
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&display=swap');
+
+.menu-navbar {
+  padding: 12px $main-lateral-padding;
+  max-height: $max-menu-height;
+  position: fixed;
+  z-index: 1030;
+  width: 100%;
+  transition: all 0.2s ease-in-out;
+}
+.menu-navbar2 {
+  background-color: #fff !important;
+  padding: 0 $main-lateral-padding !important;
+}
+
+.menu-navbar .link {
+  position: relative;
+  padding: 2.813rem .875rem;
+  transition: all 0.2s ease-in-out;
+}
+.menu-navbar2 .link {
+  padding: 1.5rem .875rem !important;
+}
+
+.menu-navbar .link a {
+  text-transform: uppercase;
+  font-weight: 700;
+  padding: 2.813rem .875rem;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.9);
+  transition: all 0.35s;
+  cursor: pointer;
+  text-decoration: none;
+}
+.menu-navbar .link a.active {
+  color: #fff !important;
+}
+
+.menu-navbar2 .link a {
+  color: #222222 !important;
+}
+.menu-navbar2 .link a.active {
+  color: #3E4979 !important;
+}
+
+.menu-navbar .link a:hover {
+  color: #fff;
+}
+.menu-navbar2 .link a:hover {
+  color: #3E4979 !important;
+}
+
+.menu-navbar .link a:before {
+  position: absolute;
+  top: -52px;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  content: '';
+  border-left: 2px solid #f8f8f8;
+  transition: all .2s ease-in-out;
+}
+.menu-navbar .link a.active:before {
+  bottom: 90px !important;
+}
+
+.menu-navbar .link a:hover:before {
+  bottom: 90px;
+}
+
+.menu-navbar a.brand {
+  padding: 0;
+  text-decoration: none;
+  color: #fff;
+  font-size: 45px;
+  letter-spacing: 8px;
+  font-family: 'Mr Dafoe', cursive;
+}
+.menu-navbar2 a.brand {
+  color: #3E4979 !important;
+}

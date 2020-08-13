@@ -1,0 +1,82 @@
+@import "../../variables";
+
+.contact-section .row{
+  margin: 0;
+}
+
+.contact-section .map,
+.contact-section .info{
+  padding: 0;
+}
+
+.contact-section .info .info-container{
+  position: relative;
+  height: 100%;
+}
+
+.contact-section .info .contact{
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-size: 22px;
+  margin-top: 40px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.contact-section .info .instagram{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  font-size: 18px;
+}
+
+.contact-section .info .instagram img{
+  margin-right: 20px;
+}
+
+.contact-section .info .instagram a{
+  text-decoration: none;
+  color: #000;
+}
+
+.contact-section .info .instagram a:hover{
+  color: #3E4979;
+}
+
+.contact-section .info .contact p{
+  margin: 0 0 0 10px;
+}
+
+.contact-section .info .contact div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-section .info .contact div:first-child{
+  margin-top: 0;
+}
+
+.contact-section .info .contact div:last-child{
+  margin-bottom: 0;
+}
+
+.contact-section .info .contact .title{
+  color: #fff;
+}
+
+.contact-section .info .contact hr{
+  border-color: #fff;
+  margin-bottom: 40px;
+}

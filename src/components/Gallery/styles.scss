@@ -1,0 +1,69 @@
+@import "../../variables";
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.gallery {
+  margin: 0;
+}
+
+.gallery .item{
+  padding: 0;
+}
+
+.gallery .item .portrait {
+  position: relative;
+}
+
+.gallery .item .portrait img{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.gallery .item .caption{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba($blue, 0.9);
+  opacity: 0;
+  transition: all 0.35s;
+  cursor: pointer;
+}
+
+.gallery .item .caption:hover{
+  opacity: 1;
+}
+
+.gallery .item .caption .inner{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: #fff;
+  font-size: 22px;
+}
+
+.gallery-viewer {
+  max-width: 66rem;
+}
+
+.gallery-viewer .modal-header{
+  padding: 0 10px;
+  border: 0;
+}
+
+.gallery-viewer .modal-body{
+  padding: 0;
+}
+
+.gallery-viewer .close{
+  font-size: 6rem;
+  padding: 0;
+  color: #fff;
+  margin-top: -40px;
+}
+
+.gallery-viewer .modal-content{
+  background-color: transparent;
+  border: 0;
+}

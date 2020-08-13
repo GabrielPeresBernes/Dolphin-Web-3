@@ -1,0 +1,102 @@
+@import "../../variables";
+
+.services-section .card{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 20px;
+  height: 100%;
+  max-width: 400px;
+}
+
+.services-section .card a{
+  margin-top: auto;
+}
+
+.services-section h2{
+  margin: 20px 0;
+}
+
+.services-section p{
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.services-section .services-title{
+  align-items: center;
+  flex-direction: column;
+}
+
+.services-section .services-content .col{
+  display: flex;
+  justify-content: center;
+}
+
+.info-section .opening {
+  padding: 0;
+  padding-left: $section-horizontal-padding;
+  flex: 0 0 57%;
+  max-width: 57%;
+}
+.info-section .warning {
+  padding: 0;
+  padding-right: $section-horizontal-padding;
+}
+
+.info-section .opening div{
+  margin: auto;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.info-section .opening p{
+  color: #fff;
+  margin: auto;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.info-section .warning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.info-section .warning div{
+  text-align: center;
+  margin-right: auto;
+}
+
+.info-section .warning .info{
+  padding-left: 20px;
+}
+
+.info-section .warning .info div{
+  padding: 0;
+  max-width: 328px;
+}
+
+.info-section .warning .title{
+  font-weight: 500;
+  color: $red;
+}
+
+.info-section .warning .text{
+  font-weight: 500;
+}
+
+.info-section .warning img{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.info-section .warning .icon{
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: $red;
+}
