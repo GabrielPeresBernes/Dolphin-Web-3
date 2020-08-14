@@ -2,14 +2,14 @@ import React, {useRef} from "react";
 import {Row, Col, Button} from "reactstrap";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faArrowDown, faAngleDown} from '@fortawesome/free-solid-svg-icons'
-import {faCheckCircle, faThumbsUp, faImage} from '@fortawesome/free-regular-svg-icons'
+import {faCheckCircle, faImage} from '@fortawesome/free-regular-svg-icons'
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
 import Gallery from "../../components/Gallery";
 
 import "./styles.scss";
-import {header2, intro, structure1, structure2, structure3, hot, shower} from "../../images";
+import {header2, intro, structure1, structure2, structure3, structure4} from "../../images";
 import {structureFull1, structureFull2, structureFull3, structureFull4, structureFull5, structureFull6} from "../../images/gallery/full";
 import {structureThumb1, structureThumb2, structureThumb3, structureThumb4, structureThumb5, structureThumb6} from "../../images/gallery/thumb";
 
@@ -84,22 +84,41 @@ function Structure() {
           <h2 className="title"> Nosso Funcionamento </h2>
           <hr/>
         </div>
+        <Row className="service-box service-box-first">
+          <Col>
+            <div className="service">
+              <img src={structure4}/>
+              <div className="description">
+                <span><FontAwesomeIcon icon={faCheckCircle}/></span> Descida e subida de Jet-Skis
+              </div>
+            </div>
+          </Col>
+        </Row>
         <Row className="service-box">
-          <Col className="service">
-            <img src={structure1}/>
-            <div className="description">Lavagem após retirada do mar</div>
+          <Col>
+            <div className="service">
+              <img src={structure1}/>
+              <div className="description">
+              <span><FontAwesomeIcon icon={faCheckCircle}/></span> Lavagem após retirada do mar
+              </div>
+            </div>
           </Col>
-          <p className="icon"><FontAwesomeIcon icon={faCheckCircle}/></p>
-          <Col className="service">
-            <img src={structure2}/>
-            <div className="description">Adoçamento do motor</div>
+          <Col>
+            <div className="service">
+              <img src={structure2}/>
+              <div className="description">
+              <span><FontAwesomeIcon icon={faCheckCircle}/></span> Adoçamento do motor
+              </div>
+            </div>
           </Col>
-          <p className="icon"><FontAwesomeIcon icon={faThumbsUp}/></p>
-          <Col className="service">
-            <img src={structure3}/>
-            <div className="description">Aplicação de silicone protetivo</div>
+          <Col>
+            <div className="service">
+              <img src={structure3}/>
+              <div className="description">
+              <span><FontAwesomeIcon icon={faCheckCircle}/></span> Aplicação de silicone protetivo
+              </div>
+            </div>
           </Col>
-          <hr/>
         </Row>
         <Row>
           <Col className="align-center">

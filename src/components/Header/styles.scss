@@ -31,7 +31,7 @@
 
 .header .content h1 {
   text-align: center;
-  font-weight: 400;
+  font-weight: 700;
   color: #fff;
   text-shadow: 0 0 5px rgba(0,0,0,0.2);
   text-transform: uppercase;
@@ -40,6 +40,7 @@
   letter-spacing: 15px;
   margin: 0;
   max-width: 1200px;
+  font-family: 'Bellota Text', cursive;
 }
 
 .header .content h2 {
@@ -62,7 +63,7 @@
 .header .button a {
   text-decoration: none;
   font-size: 30px;
-  font-weight: 700;
+  font-weight: 600;
   color: #fff;
   text-transform: uppercase;
   letter-spacing: 5px;
@@ -71,4 +72,8 @@
 
 .header .button a:hover {
   color: #fff;
+}
+
+.main-header .button a p{
+  text-shadow: 0 0 5px rgba(0,0,0,0.3);
 }

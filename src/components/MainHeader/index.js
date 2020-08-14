@@ -14,7 +14,7 @@ function MainHeader({element}) {
           <div className="button">
             <a onClick={() => element.current.scrollIntoView()}>
               <p>Ver Mais</p>
-              <h2><FontAwesomeIcon icon={faAngleDown}/></h2>
+              <h3><FontAwesomeIcon icon={faAngleDown}/></h3>
             </a>
           </div>
         </div>

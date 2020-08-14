@@ -84,11 +84,11 @@ function Main() {
         <Row style={{margin: 0}}>
           <Col className="opening bg-black" md="7">
             <div>
-              <img src={clock} width="100"/>
-              <p>Horário de funcionamento das 8:00h às 18:00h</p>
+              <img src={clock} width="80"/>
+              <p>Horário de funcionamento: das 8:00h às 18:00h</p>
             </div>
             <div>
-              <img src={calendar} width="100"/>
+              <img src={calendar} width="80"/>
               <p>Folgas ás quartas-feiras <br/> *Exceto em feriados e alta temporada</p>
             </div>
           </Col>

@@ -4,7 +4,7 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
 
 import "./styles.scss";
 
-function MainHeader({element, title, background}) {
+function MainHeader({element, title, background, scrollTarget=true}) {
   return (
     <header className="header">
       <div className="background" style={{backgroundImage: `url(${background})`}}></div>
@@ -12,9 +12,9 @@ function MainHeader({element, title, background}) {
         <h1>{title}</h1>
         <div className="button-box">
           <div className="button">
-            <a onClick={() => element.current.scrollIntoView()}>
+            <a onClick={() => element.current.scrollIntoView(scrollTarget)}>
               <p>Ver Mais</p>
-              <h2><FontAwesomeIcon icon={faAngleDown}/></h2>
+              <h3><FontAwesomeIcon icon={faAngleDown}/></h3>
             </a>
           </div>
         </div>

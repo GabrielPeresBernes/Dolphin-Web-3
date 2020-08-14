@@ -1,6 +1,8 @@
 import React from "react";
 import {Row, Col} from "reactstrap";
 import {Link} from "react-router-dom";
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faInstagram} from "@fortawesome/free-brands-svg-icons";
 
 import {logo, instagram} from "./../../images";
 import paths from "../../config/paths";
@@ -13,6 +15,17 @@ function Footer() {
       <Row>
         <Col>
           <img src={logo} width="120"/>
+        </Col>
+      </Row>
+      <Row>
+        <Col>
+          <div className="instagram">
+            <FontAwesomeIcon icon={faInstagram} size="2x"/>
+            &nbsp; Siga nosso instagram: &nbsp;
+            <a href="https://www.instagram.com/marinadolphinubatuba" target="_blank">
+              <strong>@marinadolphinubatuba</strong>
+            </a>
+          </div>
         </Col>
       </Row>
       <Row>

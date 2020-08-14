@@ -1,23 +1,32 @@
 @import "../../variables";
 
 .working-section .service{
+  position: relative;
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 100%;
 }
 
 .working-section .service .description{
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba($color: #fff, $alpha: 0.9);
+  z-index: 2;
   font-size: 22px;
-  padding: 20px 0;
+  padding: 15px 0;
   text-align: center;
   font-weight: 500;
 }
 
 .working-section .service img{
-  max-width: 300px;
+  max-width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 2;
+}
+
+.working-section .service span{
+  color: #3c763d;
 }
 
 .working-section .service-box{
@@ -26,20 +35,16 @@
   align-items: center;
 }
 
+.working-section .service-box-first{
+  margin-bottom: 40px;
+}
+
 .working-section .service-box p.icon{
   color: #3c763d;
   font-size: 60px;
   margin: 0;
   z-index: 2;
   background-color: $grey;
-}
-
-.working-section .service-box hr{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  border-color: #3c763d;
 }
 
 .working-section .working-title{

@@ -20,6 +20,7 @@ function Contact() {
         element={ContactSectionEl}
         title="Estamos prontos para te receber"
         background={header5}
+        scrollTarget={false}
       />
       <section ref={ContactSectionEl} className="bg-black contact-section padding-less">
         <Row>
