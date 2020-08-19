@@ -1,0 +1,34 @@
+.loader-spinner{
+  z-index: 2000;
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: #222222;
+  visibility: hidden;
+  opacity:0;
+  transition:visibility 0.3s linear,opacity 0.3s linear;
+}
+
+.loader-spinner.show{
+  visibility: visible;
+  opacity:1;
+}
+
+.loader-spinner .logo{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.loader-spinner .logo img{
+  width: 120px;
+}
+
+.loader-spinner .icon{
+  color: #2B5877;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}

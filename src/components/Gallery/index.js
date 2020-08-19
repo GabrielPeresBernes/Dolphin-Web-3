@@ -14,6 +14,8 @@ function Gallery({gallery}) {
     toggle();
   }
 
+  let mobile = window.matchMedia("(max-width: 768px)");
+
   return (
     <Row className="gallery">
       <Modal isOpen={modal} toggle={toggle} className="gallery-viewer" centered={true}>
@@ -21,7 +23,7 @@ function Gallery({gallery}) {
         <ModalBody>
           <ImageGallery 
             items={gallery}
-            thumbnailPosition="left"
+            thumbnailPosition={mobile.matches ? "bottom" : "left"}
             showPlayButton={false}
             showIndex={true}
             startIndex={galleryItem}
@@ -30,9 +32,9 @@ function Gallery({gallery}) {
       </Modal>
       {
         gallery.map((element, index) => (
-          <Col className="item" md="4">
+          <Col key={index} className="item" xs="12" sm="6" md="4">
             <div className="portrait" onClick={() => openViewer(index)}>
-              <img src={element.thumbnail}/>
+              <img src={element.thumbnail} alt="thumbnail de uma foto da galeria"/>
               <div className="caption">
                 <div className="inner">
                   {element.description}

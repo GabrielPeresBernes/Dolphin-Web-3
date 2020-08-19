@@ -1,3 +1,5 @@
+@import "../../variables";
+
 .pricing-section .price{
   display: block;
   font-size: 50px;
@@ -47,7 +49,7 @@
 }
 
 .pricing-section .pricing-card{
-  min-width: 320px;
+  min-width: 350px;
   display: flex;
   text-align: center;
   align-items: center;
@@ -160,4 +162,27 @@
   0px 1px 10px 0px rgba(0,0,0,0.12);
   background-color: #465289;
   border-color: #465289;
+}
+
+// Tablet
+@media (max-width: $tablet) {
+  .pricing-section .plans{
+    flex-direction: column;
+  }
+
+  .pricing-section .pricing-card{
+    min-width: 300px;
+  }
+
+  .pricing-section .plans .pricing-card:first-child{
+    margin-bottom: 10px;
+  }
+
+  .pricing-section .plans .pricing-card:last-child{
+    margin-top: 10px;
+  }
+
+  .documents-section .button-col a{
+    margin-top: 40px;
+  }
 }

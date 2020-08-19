@@ -1,10 +1,20 @@
+// paddings
 $main-lateral-padding: 48px;
 $section-vertical-padding: 100px;
 $section-horizontal-padding: $main-lateral-padding;
 $max-menu-height: 111px + 12px * 2;
 
+$menu2-height: 72px;
+$menu2-mobile-height: 91px;
+
+// colors
 $blue: #3E4979;
 $black: #222222;
 $red: #DC3545;
 $grey: #F2F0E9;
 $gree: #3c763d;
+
+// media breakpoints
+$phone: 576px;
+$tablet: 768px;
+$desktop: 1024px;

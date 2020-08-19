@@ -1,76 +1,79 @@
-import React, {useRef} from 'react';
+import React, {useRef, useState} from 'react';
 import {Row, Col, Card} from "reactstrap";
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faArrowDown, faArrowRight, faExclamationCircle} from '@fortawesome/free-solid-svg-icons'
+import {faArrowRight, faExclamationCircle} from '@fortawesome/free-solid-svg-icons'
 
 import MainHeader from "../../components/MainHeader";
 import Roundicon from "../../components/Roundicon";
 import Footer from "../../components/Footer";
+import Intro from "../../components/Intro";
+import LoaderSpinner from "../../components/LoaderSpinner";
 
 import {courses, jetmarina, documents, clock, calendar, jetski} from "../../images";
 import "./styles.scss";
 
 function Main() {
+  const [loading, setLoading] = useState(true);
   const WelcomeSectionEl = useRef(null);
   const ServicesSectionEl = useRef(null);
 
   return (
     <div className="App-content">
+      <LoaderSpinner show={loading}/>
       <MainHeader element={WelcomeSectionEl}/>
-      <section className="intro-section" ref={WelcomeSectionEl}>
-        <Row>
-          <Col className="text-col">
-            <div>
-              <h2 className="title">Bem-Vindo a Dolphin</h2>
-              <p className="text">
-                A Marina Dolphin esta localizada na praia da enseada,
-                uma das melhores de Ubatuba para esportes náuticos,
-                um ponto estratégico para quem pretende ir até o Parque Ecológico da Ilha Anchieta,
-                Praia 7 Fontes ou mesmo seguir viagem para Ilha Bela.
-              </p>
-              <a className="btn-more" onClick={() => ServicesSectionEl.current.scrollIntoView()}>
-                Nossa Estrutura <FontAwesomeIcon icon={faArrowDown}/>
-              </a>
-            </div>
-          </Col>
-          <Col className="data-col">
-            <div className="responsive-iframe-container">
-              <iframe 
-                className="responsive-iframe"
-                src="https://www.youtube.com/embed/RgBeAuvW-Yc"
-                frameBorder="0" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen
-              >
-              </iframe>
-            </div>
-          </Col>
-        </Row>  
+      <section ref={WelcomeSectionEl}>
+        <Intro
+          title="Bem-Vindo a Dolphin"
+          text={["Estamos localizados na praia da enseada,"
+          +" uma das melhores de Ubatuba para esportes náuticos,"
+          +" um ponto estratégico para quem pretende ir ao Parque Ecológico da Ilha Anchieta,"
+          +" Praia 7 Fontes ou mesmo seguir para a Ilha Bela.", <br/>,
+          " Em nosso sistema de lift cada jet ski é disposto em berços individuais,"
+          +" em prateleiras cobertas."
+          +" Nossa carreta própria para o transporte de jet skis proporciona não somente segurança,"
+          +" mas também praticidade e conforto aos nossos clientes."]}
+          buttonText="Nossa Estrutura"
+          buttonEl={ServicesSectionEl}
+          media={<div className="responsive-iframe-container">
+            <iframe 
+              title="vídeo apresentação da Marina Dolphin"
+              className="responsive-iframe"
+              src="https://www.youtube.com/embed/RgBeAuvW-Yc"
+              frameBorder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+              allowFullScreen
+              onLoad={() => setLoading(false)}
+            >
+            </iframe>
+          </div>}
+        /> 
       </section>
-      <section className="services-section bg-grey" ref={ServicesSectionEl}>
+      <section className="services-section bg-grey half-padding" ref={ServicesSectionEl}>
         <Row className="services-title">
-          <h2 className="title"> Nossos Serviços </h2>
-          <hr/>
+          <Col>
+            <h2 className="title"> Nossos Serviços </h2>
+            <hr/>
+          </Col>
         </Row>
         <Row className="services-content">
-          <Col>
+          <Col className="col" xs="12" md="4">
             <Card>
               <Roundicon image={jetmarina} width="180"/>
                 <h2> Jet Marina </h2>
-                <p>Contamos com uma estrutura moderna de lift, garantia de praticidade e segurança.</p>
+                <p>Contamos com uma moderna estrutura de lift, garantia de praticidade e segurança.</p>
                 <Link to={"/structure"} className="btn-more"> Nossa estrutura <FontAwesomeIcon icon={faArrowRight}/> </Link>
             </Card>
           </Col>
-          <Col>
+          <Col className="col" xs="12" md="4">
             <Card>
               <Roundicon image={courses} width="180"/>
               <h2> Cursos </h2>
-              <p>Oferecemos cursos completos de Arrais Amador e Motonauta Amador.</p>
+              <p>Oferecemos cursos completos de Arrais Amador e Motonauta.</p>
               <Link to="/courses" className="btn-more"> Nossos cursos <FontAwesomeIcon icon={faArrowRight}/> </Link>
             </Card>
           </Col>
-          <Col>
+          <Col className="col" xs="12" md="4">
             <Card>
               <Roundicon image={documents} width="180"/>
               <h2> Despachante </h2>
@@ -81,20 +84,20 @@ function Main() {
         </Row>
       </section>
       <section className="info-section padding-less bg-black">
-        <Row style={{margin: 0}}>
-          <Col className="opening bg-black" md="7">
+        <Row style={{margin: 0}} className="bg-white">
+          <Col className="opening bg-black" xs="12" md="7">
             <div>
-              <img src={clock} width="80"/>
+              <img src={clock} width="70"alt="ícone de um relógio"/>
               <p>Horário de funcionamento: das 8:00h às 18:00h</p>
             </div>
             <div>
-              <img src={calendar} width="80"/>
+              <img src={calendar} width="70" alt="ícone de um calendário"/>
               <p>Folgas ás quartas-feiras <br/> *Exceto em feriados e alta temporada</p>
             </div>
           </Col>
-          <Col className="warning bg-white">
-            <div style={{position: "relative"}}>
-              <img src={jetski}/>
+          <Col className="warning bg-white" xs="12" md="5">
+            <div style={{position: "relative", margin: 0}}>
+              <img src={jetski} alt="jet skis parados na mar"/>
               <FontAwesomeIcon className="icon" icon={faExclamationCircle} size="4x"/>
             </div>
             <div className="info">

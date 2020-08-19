@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, {useState, useEffect} from "react";
 import {Navbar, NavbarBrand, NavbarToggler, Collapse, Nav, NavItem} from 'reactstrap';
 import {Link, useLocation} from "react-router-dom";
 
@@ -20,12 +20,19 @@ function Menu() {
   // Hide active class from Main page
   if (pathname === "/") pathname = null;
 
+  useEffect(() => {
+    setIsOpen(false);
+  }, [pathname]);
+
   return (
-    <Navbar expand="md" className={scrollPosition > 0 ? "menu-navbar menu-navbar2" : "menu-navbar"}>
+    <Navbar 
+      expand="md" 
+      className={(scrollPosition > 0 || isOpen) ? "menu-navbar menu-navbar2" : "menu-navbar"}
+    >
       <NavbarBrand className="brand" tag={Link} to="/">
         Dolphin
       </NavbarBrand>
-      <NavbarToggler onClick={toggle} />
+      <NavbarToggler onClick={toggle} className={isOpen ? "closeIcon" : ""} />
       <Collapse isOpen={isOpen} navbar>
         <Nav className="ml-auto" navbar>
           {paths.map(value => (

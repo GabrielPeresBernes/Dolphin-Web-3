@@ -2,10 +2,11 @@ import React, {useRef} from "react";
 import {Row, Col, Card, CardBody, Button} from "reactstrap";
 import {Link} from "react-router-dom";
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faArrowDown, faPaperPlane} from '@fortawesome/free-solid-svg-icons'
+import {faPaperPlane} from '@fortawesome/free-solid-svg-icons'
 
 import Header from "../../components/Header";
 import Footer from "../../components/Footer";
+import Intro from "../../components/Intro";
 
 import {header3, courses2, certificate, documents2, receipt} from "../../images";
 import "./styles.scss";
@@ -18,32 +19,23 @@ function Courses() {
     <div className="App-content">
       <Header
         element={IntroSectionEl}
-        title="Seu Motonauta e Arrais Amador na Dolphin"
+        title="Motonauta e Arrais Amador na Dolphin"
         background={header3}
       />
       <section className="intro-section" ref={IntroSectionEl}>
-        <Row>
-          <Col className="text-col">
-            <div>
-              <h2 className="title">A sua habilitação está aqui</h2>
-              <p className="text">
-                Somos cadastrados junto a Captânia dos Portos de São Sebastião,
-                e autorizados a aplicar cursos para arrais amador e motonauta,
-                e também emitir certidicado de embarque.<br/>
-                Ao término do curso prático é efetuada incrição na capitânia,
-                para a realização do exame teórico escrito.
-              </p>
-              <a className="btn-more" onClick={() => PricingSectionEl.current.scrollIntoView()}>
-                Confira nossos preços <FontAwesomeIcon icon={faArrowDown}/>
-              </a>
-            </div>
-          </Col>
-          <Col className="data-col">
-            <img src={courses2}/>
-          </Col>
-        </Row>
+        <Intro
+          title="A sua habilitação está aqui!"
+          text={["A Marina Dolphin é cadastrada junto a Captânia dos Portos de São Sebastião,"
+          +" e autorizada a aplicar cursos para arrais amador e motonauta,"
+          +" e também emitir certidicado de embarque.", <br/>,
+          "Ao término do curso prático, efetuamos incrição na capitânia,"
+          +" para a realização do exame teórico escrito."]}
+          buttonText="Confira nossos preços"
+          buttonEl={PricingSectionEl}
+          media={<img src={courses2} alt="imagem de cabeçalho da sessão de cursos"/>}
+        />
       </section>
-      <section className="pricing-section bg-blue" ref={PricingSectionEl}>
+      <section className="pricing-section bg-blue half-padding" ref={PricingSectionEl}>
         <div className="pricing-title">
           <h2 className="title"> Nossos Preços </h2>
           <hr/>
@@ -100,25 +92,25 @@ function Courses() {
       </section>
       <section className="documents-section bg-black half-padding">
         <Row>
-          <Col className="documents-list">
+          <Col className="documents-list" sm="12" md="6">
             <div className="documents-title">
               <h2 className="title"> Documentos Necessários </h2>
               <hr/>
             </div>
             <div className="document">
-              <img src={documents2}></img>
+              <img src={documents2} alt="ícone de documentos"></img>
               <p>Cópia do RG, CPF ou CNH</p>
             </div>
             <div className="document">
-              <img src={receipt}></img>
+              <img src={receipt} alt="ícone de um comprovante de endereço"></img>
               <p>Comprovante de endereço</p>
             </div>
             <div className="document">
-              <img src={certificate}></img>
+              <img src={certificate} alt="ícone de um atestado médico"></img>
               <p>Atestado médico (caso não for apresentado CNH)</p>
             </div>
           </Col>
-          <Col className="button-col" >
+          <Col className="button-col" sm="12" md="6">
             <Button size="lg" tag={Link} to="/contact">
               Entrar em contato
               <FontAwesomeIcon icon={faPaperPlane} style={{marginLeft: 12}}/>

@@ -13,6 +13,8 @@
   width:100%;
   height:100%;
   background-size: cover;
+  background-position: center;
+  filter: grayscale(10%) blur(0.5px) brightness(85%);
 
   //animation: animatedBackground 60s ease-in-out forwards;
 }
@@ -60,7 +62,7 @@
   animation-iteration-count: infinite;
 }
 
-.header .button a {
+.header .button span {
   text-decoration: none;
   font-size: 30px;
   font-weight: 600;
@@ -70,10 +72,40 @@
   cursor: pointer;
 }
 
-.header .button a:hover {
+.header .button span:hover {
   color: #fff;
 }
 
-.main-header .button a p{
+.header .button span p{
   text-shadow: 0 0 5px rgba(0,0,0,0.3);
+}
+
+// Tablet
+@media (max-width: $tablet) {
+  .header .content {
+    padding: 0;
+    min-height: calc(100% - 100px);
+  }
+  .header .content h1 {
+    margin: 0;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 8px;
+  }
+  .header .button span {
+    font-size: 28px;
+  }
+}
+
+// Phone
+@media (max-width: $phone) {
+  .header .content h1 {
+    font-size: 30px;
+    line-height: 42px;
+    letter-spacing: 5px;
+    padding: 0 10px;
+  }
+  .header .button span {
+    font-size: 24px;
+  }
 }

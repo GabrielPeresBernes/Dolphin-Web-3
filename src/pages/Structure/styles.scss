@@ -20,6 +20,7 @@
 }
 
 .working-section .service img{
+  width: 100%;
   max-width: 100%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   z-index: 2;
@@ -55,4 +56,50 @@
 .working-section .gallery-button{
   margin-top: 20px;
   animation: headShake 3s infinite;
+}
+
+.working-section .service-box .col{
+  padding: 0 15px;
+}
+
+// Tablet
+@media (max-width: $tablet) {
+  .working-section .service-box-second .service{
+    margin: auto;
+  }
+
+  .working-section .service .description{
+    font-size: 18px;
+  }
+
+  .working-section .service-box-second div:nth-child(3) .service{
+    margin-top: 20px;
+  }
+
+  .working-section .service-box-second div:last-child .service{
+    margin-top: 20px;
+  }
+}
+
+// Phone
+@media (max-width: $phone) {
+  .working-section .service-box-first{
+    margin-bottom: 20px;
+  }
+
+  .working-section .service-box-second div:first-child .service{
+    margin-bottom: 20px;
+  }
+
+  .working-section .service-box-second div:nth-child(3) .service{
+    margin-top: 20px;
+  }
+
+  .working-section .service-box-second div:last-child .service{
+    margin-top: 20px;
+  }
+
+  .working-section .service-box .col{
+    padding: 0;
+  }
 }

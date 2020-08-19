@@ -39,6 +39,11 @@
   font-size: 18px;
 }
 
+.contact-section .info .instagram div{
+  display: flex;
+  align-items: center;
+}
+
 .contact-section .info .instagram img{
   margin-right: 20px;
 }
@@ -79,4 +84,64 @@
 .contact-section .info .contact hr{
   border-color: #fff;
   margin-bottom: 40px;
+}
+
+.whatsapp-button{
+  position: fixed;
+  bottom: 15px;
+  left: 15px;
+  z-index: 5;
+  animation: headShake 3s infinite;
+  visibility: hidden;
+  opacity:0;
+  transition:visibility 0.3s linear,opacity 0.3s linear;
+}
+
+.whatsapp-button.show{
+  visibility: visible;
+  opacity:1;
+}
+
+.whatsapp-button a{
+  text-decoration: none;
+}
+
+.whatsapp-button img{
+  width: 80px;
+}
+
+// Tablet
+@media (max-width: $tablet) {
+  .contact-section .info .info-container{
+    min-height: 430px;
+  }
+
+  .contact-section .info .instagram{
+    padding: 10px 0;
+  }
+}
+
+// Phone
+@media (max-width: $phone) {
+  .contact-section .info .instagram img{
+    width: 45px;
+    margin-right: 10px;
+  }
+
+  .contact-section .info .instagram{
+    flex-direction: column;
+  }
+
+  .contact-section .info .contact {
+    font-size: 20px;
+  }
+
+  .whatsapp-button{
+    bottom: 5px;
+    left: 5px;
+  }
+
+  .whatsapp-button img{
+    width: 70px;
+  }
 }

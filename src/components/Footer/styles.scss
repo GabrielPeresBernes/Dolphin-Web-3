@@ -1,3 +1,5 @@
+@import "../../variables";
+
 footer {
   padding: 48px 15px;
   background: #f2f0e9;
@@ -23,7 +25,8 @@ footer img{
   margin-bottom: 40px;
 }
 
-footer .instagram{
+footer .instagram,
+footer .whatsapp{
   display: flex;
   align-items: center;
   justify-content: left;
@@ -31,11 +34,50 @@ footer .instagram{
   font-size: 18px;
 }
 
-footer .instagram a{
+footer .instagram div{
+  display: flex;
+  align-items: center;
+}
+
+footer .instagram a,
+footer .whatsapp a {
   text-decoration: none;
   color: #000;
 }
 
 footer .instagram a:hover{
   color: #3E4979;
+}
+
+footer .whatsapp a:hover{
+  color: #00A82D
+}
+
+footer .whatsapp a{
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+footer .whatsapp img{
+  width:  37px;
+  margin: 0;
+}
+
+// Phone
+@media (max-width: $phone) {
+  footer .instagram,
+  footer .whatsapp {
+    font-size: 17px;
+    flex-direction: column;
+    align-items: unset;
+  }
+
+  footer {
+    padding: 48px ($section-horizontal-padding/2)/2;
+  }
+
+  footer img{
+    margin-bottom: 20px;
+  }
 }

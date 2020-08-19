@@ -20,6 +20,11 @@ html, body, div#root, div.App, div.App-content {
 .bg-blue {background-color: #3E4979;}
 .bg-black {background-color: #222222;}
 
+.font-blue {color: #3E4979}
+.font-grey {color: #F2F0E9}
+
+.font-weight-600 {font-weight: 600;}
+
 section {
   position: relative;
   padding: $section-vertical-padding $section-horizontal-padding;
@@ -92,39 +97,6 @@ a{
   cursor: pointer;
 }
 
-.intro-section .text-col,
-.intro-section .data-col {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-.intro-section .text-col h2{
-  margin-bottom: 40px;
-  font-size: 2.7vw;
-  line-height: 2.7vw;
-}
-
-.intro-section .text-col p{
-  margin: 0;
-  font-size: 1.32vw;
-  line-height: 2.2vw;
-  text-align: justify;
-}
-
-.intro-section .text-col a{
-  font-size: 1.05vw;
-  margin-top: 40px;
-  animation: pulse;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-}
-
-.intro-section .data-col img{
-  max-height: 100%;
-  max-width: 100%;
-}
-
 .responsive-iframe-container {
   position: relative;
   overflow: hidden;
@@ -146,4 +118,66 @@ a{
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.row{
+  margin: 0;
+}
+
+.col, .col-1, .col-10, .col-11, .col-12, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-auto, .col-lg, .col-lg-1, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-auto, .col-md, .col-md-1, .col-md-10, .col-md-11, .col-md-12, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-auto, .col-sm, .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-auto, .col-xl, .col-xl-1, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-auto {
+  padding: 0;
+}
+
+// PC
+@media (min-width: $tablet) {
+  .hide-desktop{
+    display: none !important;
+  }
+  
+  section{
+    scroll-margin-top: $menu2-height;
+  }
+}
+
+// Tablet
+@media (max-width: $tablet) {
+  .hide-tablet{
+    display: none !important;
+  }
+
+  section{
+    scroll-margin-top: $menu2-mobile-height;
+  }
+  
+  section .title {
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+}
+
+// Phone
+@media (max-width: $phone) {
+  .hide-phone{
+    display: none !important;
+  }
+
+  section {
+    padding: $section-vertical-padding/2 ($section-horizontal-padding/2)/2;
+  }
+  section.half-padding{
+    padding: ($section-vertical-padding/2)/2 ($section-horizontal-padding/2)/2 !important;
+  }
+  section.padding-vertical{
+    padding: $section-vertical-padding/2 0 !important;
+  }
+  section.half-padding-vertical{
+    padding: ($section-vertical-padding/2)/2 0 !important;
+  }
+  section.padding-horizontal {
+    padding: 0 ($section-horizontal-padding/2)/2 !important;
+  }
+  section.padding-less {
+    padding: 0 !important;
+  }
 }

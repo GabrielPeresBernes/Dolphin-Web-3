@@ -1,0 +1,74 @@
+@import "../../variables";
+
+.intro-section .text-col,
+.intro-section .data-col {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+.intro-section .text-col h2{
+  margin-bottom: 40px;
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.intro-section .text-col p{
+  margin: 0;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: justify;
+}
+
+.intro-section .text-col .btn-more{
+  cursor: pointer;
+  font-size: 15px;
+  line-height: 24px;
+  margin-top: 40px;
+  animation: pulse;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+.intro-section .data-col img{
+  max-height: 100%;
+  max-width: 100%;
+}
+
+// PC
+@media (min-width: $tablet) {
+  .intro-section .text-col{
+    padding-right: 15px;
+  }
+
+  .intro-section .data-col{
+    padding-left: 15px;
+  }
+}
+
+// Tablet
+@media (max-width: $tablet) {
+  .intro-section .text-col h2{
+    margin-bottom: 30px;
+    font-size: 36px;
+    line-height: 36px;
+    letter-spacing: 3px;
+  }
+
+  .intro-section .text-col p{
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .intro-section .data-col{
+    margin-top: 20px;
+  }
+
+  .intro-section .text-col .btn-more{
+    margin-top: 30px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+}
