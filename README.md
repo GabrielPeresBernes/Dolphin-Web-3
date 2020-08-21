@@ -1,68 +1,43 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Dolhin Web v3
 
-## Available Scripts
+Responsive website created with React.js and Bootstrap, to see it live access [Marina Dolphin](https://github.com/facebook/create-react-app)
 
-In the project directory, you can run:
+### Runing it localy
 
-### `npm start`
+First install its dependencies with `npm install` or `yarn install`
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Download the images requeried in the project [Images](https://drive.google.com/drive/folders/1EFNGjs-hM1-Pd_MZc8RSoPidywm6Vb99?usp=sharing)
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Rename the directory to "images" and put it inside "/src"
 
-### `npm test`
+Then you can run the project with `npm start` or `yarn start`
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Directory Structure
 
-### `npm run build`
+- **build/** (optimized aplication for production)
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **node_modules/** (project dependencies)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+- **public/** (public files like index and favicon)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **src/** (main aplication files, avaliable in development)
 
-### `npm run eject`
+  - **components/** (components React)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+  - **config/** (configuration files)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+  - **images/** (project images)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+  - **pages/** (aplication pages)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+  - **utils/** (utility functions)
 
-## Learn More
+  - **_variables.scss** (sass variables)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+  - **App.js** (import the aplication routes to be rendered)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+  - **index.js** (render React in the aplication)
 
-### Code Splitting
+  - **routes.js** (routes of the aplication)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+  - **styles.scss** (main styles of the aplication)
