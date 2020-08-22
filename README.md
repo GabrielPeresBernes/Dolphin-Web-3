@@ -1,8 +1,8 @@
-## Dolhin Web v3
+# Dolhin Web v3
 
 Responsive website created with React.js and Bootstrap, to see it live access [Marina Dolphin](http://marinadolphin.com.br/)
 
-### Runing it localy
+## Runing it localy
 
 First install its dependencies with `npm install` or `yarn install`
 
@@ -12,7 +12,7 @@ Rename the directory to "images" and move it inside "/src"
 
 Then you can run the project with `npm start` or `yarn start`
 
-### Directory Structure
+## Directory Structure
 
 - **build/** (optimized application for production)
 
