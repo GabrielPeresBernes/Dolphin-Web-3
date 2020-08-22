@@ -8,7 +8,7 @@ First install its dependencies with `npm install` or `yarn install`
 
 Download the images requeried in the project [Images](https://drive.google.com/drive/folders/1EFNGjs-hM1-Pd_MZc8RSoPidywm6Vb99?usp=sharing)
 
-Rename the directory to "images" and put it inside "/src"
+Rename the directory to "images" and move it inside "/src"
 
 Then you can run the project with `npm start` or `yarn start`
 
@@ -18,9 +18,9 @@ Then you can run the project with `npm start` or `yarn start`
 
 - **node_modules/** (project dependencies)
 
-- **public/** (public files like index and favicon)
+- **public/** (public files like index.html and favicon)
 
-- **src/** (main aplication files, avaliable in development)
+- **src/** (main aplication files, available in development)
 
   - **components/** (components React)
 
