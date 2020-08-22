@@ -10,7 +10,7 @@ Download the images requeried in the project [Images](https://drive.google.com/d
 
 Rename the directory to "images" and move it inside "/src"
 
-Then you can run the project with `npm start` or `yarn start`
+Inside de project root directory run `npm start` or `yarn start` to start the application
 
 ## Directory Structure
 
