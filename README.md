@@ -14,13 +14,13 @@ Then you can run the project with `npm start` or `yarn start`
 
 ### Directory Structure
 
-- **build/** (optimized aplication for production)
+- **build/** (optimized application for production)
 
 - **node_modules/** (project dependencies)
 
 - **public/** (public files like index.html and favicon)
 
-- **src/** (main aplication files, available in development)
+- **src/** (main application files, available in development)
 
   - **components/** (components React)
 
@@ -28,16 +28,16 @@ Then you can run the project with `npm start` or `yarn start`
 
   - **images/** (project images)
 
-  - **pages/** (aplication pages)
+  - **pages/** (application pages)
 
   - **utils/** (utility functions)
 
   - **_variables.scss** (sass variables)
 
-  - **App.js** (import the aplication routes to be rendered)
+  - **App.js** (import the application routes to be rendered)
 
-  - **index.js** (render React in the aplication)
+  - **index.js** (render React in the application)
 
-  - **routes.js** (routes of the aplication)
+  - **routes.js** (routes of the application)
 
-  - **styles.scss** (main styles of the aplication)
+  - **styles.scss** (main styles of the application)
