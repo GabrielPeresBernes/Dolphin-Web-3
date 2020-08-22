@@ -1,6 +1,6 @@
 ## Dolhin Web v3
 
-Responsive website created with React.js and Bootstrap, to see it live access [Marina Dolphin](https://github.com/facebook/create-react-app)
+Responsive website created with React.js and Bootstrap, to see it live access [Marina Dolphin](http://marinadolphin.com.br/)
 
 ### Runing it localy
 
