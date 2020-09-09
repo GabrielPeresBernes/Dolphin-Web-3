@@ -2,42 +2,55 @@
 
 Responsive website created with React.js and Bootstrap, to see it live access [Marina Dolphin](http://marinadolphin.com.br/)
 
-## Runing it localy
+## Getting Started
 
-First install its dependencies with `npm install` or `yarn install`
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+
+### Prerequisites
 
 Download the images requeried in the project [Images](https://drive.google.com/drive/folders/1EFNGjs-hM1-Pd_MZc8RSoPidywm6Vb99?usp=sharing)
 
-Rename the directory to "images" and move it inside "/src"
+### Installing
 
-Inside de project root directory run `npm start` or `yarn start` to start the application
+First install the dependencies from `package.json`, open a terminal on the project root directory and run:
+```sh
+$ npm install
 
-## Directory Structure
+# or
 
-- **build/** (optimized application for production)
+$ yarn install
+```
 
-- **node_modules/** (project dependencies)
+Rename the downloaded images directory to `images`, and move it inside `/src`.
 
-- **public/** (public files like index.html and favicon)
+To start the application, inside de project root directory run:
+```sh
+$ npm run start
 
-- **src/** (main application files, available in development)
+# or
 
-  - **components/** (components React)
+$ yarn start
+```
 
-  - **config/** (configuration files)
+## Deployment
 
-  - **images/** (project images)
+To deploy this aplication, open a terminal on the project root directory and run:
+```sh
+$ npm run build
 
-  - **pages/** (application pages)
+# or
 
-  - **utils/** (utility functions)
+$ yarn build
+```
 
-  - **_variables.scss** (sass variables)
+## Built With
 
-  - **App.js** (import the application routes to be rendered)
+* [React](https://pt-br.reactjs.org) - JavaScript library for building user interfaces
+* [React-router-dom](https://reactrouter.com/web/guides/quick-start) - Declarative Routing for React.js
+* [Reactstrap](https://reactstrap.github.io) - Bootstrap framework for React
+* [animate.css](https://animate.style) - Cross-browser library of CSS animations
+* [Font-awesome](https://fontawesome.com/how-to-use/on-the-web/using-with/react) - Font Awesome icons for React
 
-  - **index.js** (render React in the application)
+## Authors
 
-  - **routes.js** (routes of the application)
-
-  - **styles.scss** (main styles of the application)
+* **Gabriel P Bernes** - [LinkedIn](https://www.linkedin.com/in/gabriel-peres-bernes/)
