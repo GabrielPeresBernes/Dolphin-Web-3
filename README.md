@@ -4,6 +4,13 @@
 
 Responsive website created with React.js and Bootstrap, to see it live access [Marina Dolphin](http://marinadolphin.com.br/).
 
+## Summary
+
+  - [Getting Started](#getting-started)
+  - [Deployment](#deployment)
+  - [Built With](#built-with)
+  - [Authors](#authors)
+
 ## 🚦 Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine. See deployment for notes on how to deploy the project.
