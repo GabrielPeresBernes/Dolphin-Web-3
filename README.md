@@ -6,10 +6,10 @@ Responsive website created with React.js and Bootstrap, to see it live access [M
 
 ## Summary
 
-  - [Getting Started](#getting-started)
-  - [Deployment](#deployment)
-  - [Built With](#built-with)
-  - [Authors](#authors)
+  - [Getting Started](#-getting-started)
+  - [Deployment](#-deployment)
+  - [Built With](#-built-with)
+  - [Authors](#%EF%B8%8F-authors)
 
 ## 🚦 Getting Started
 
