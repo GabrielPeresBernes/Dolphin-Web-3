@@ -18,7 +18,7 @@ const paths = [
     component: Structure 
   },
   {
-    name: "Cursos",
+    name: "Curso",
     path: "/courses",
     exact: false,
     component: Courses 

@@ -1,7 +1,7 @@
 const MODES = ["prod", "dev"];
 
 const global = {
-  MODE: MODES[0],
+  MODE: MODES[1],
 }
 
 export default global;

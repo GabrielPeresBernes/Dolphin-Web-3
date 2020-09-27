@@ -63,7 +63,7 @@ function Contact() {
                 </div>
                 <div>
                   <FontAwesomeIcon icon={faEnvelope}/>
-                  <p>marinadolphin@uol.com.br </p>
+                  <p>marinadolphinsp@gmail.com </p>
                 </div>
               </div>
               <div className="instagram">

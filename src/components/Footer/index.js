@@ -51,7 +51,7 @@ function Footer() {
           <p className="font-weight-600"><strong> Contato </strong></p>
           <p><strong> WhatsApp: </strong> (12) 3842-2654 </p>
           <p><strong> Telefone: </strong> (12) 3842-2654 </p>
-          <p><strong> Email: </strong> marinadolphin@uol.com.br </p>
+          <p><strong> Email: </strong> marinadolphinsp@gmail.com </p>
         </Col>
         <Col className="hide-tablet" md="4">
           <p className="font-weight-600"><strong> Links </strong></p>

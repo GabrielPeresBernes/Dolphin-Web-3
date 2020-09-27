@@ -48,6 +48,12 @@
   justify-content: center;
 }
 
+.pricing-section img {
+  width: 350px;
+  border-top-left-radius: .25rem;
+  border-bottom-left-radius: .25rem;
+}
+
 .pricing-section .pricing-card{
   min-width: 350px;
   display: flex;
