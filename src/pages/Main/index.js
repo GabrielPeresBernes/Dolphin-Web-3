@@ -68,8 +68,8 @@ function Main() {
           <Col className="col" xs="12" md="4">
             <Card>
               <Roundicon image={courses} width="180"/>
-              <h2> Cursos </h2>
-              <p>Oferecemos cursos completos de Arrais Amador e Motonauta.</p>
+              <h2> Motonauta </h2>
+              <p>Oferecemos curso completo de Motonauta, com curso prático e exame teórico.</p>
               <Link to="/courses" className="btn-more"> Nossos cursos <FontAwesomeIcon icon={faArrowRight}/> </Link>
             </Card>
           </Col>
